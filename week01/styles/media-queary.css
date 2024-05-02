@@ -1,3 +1,5 @@
+/* HTML selectors*/
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,6 +12,10 @@ header, main, footer {
     background-color: aqua;
 }
 
+li {
+    text-decoration: none;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,3 +26,9 @@ section {
     padding: 1rem;
     background-color: #fff;
 }
+
+/* class selectors */
+
+
+
+/* id selectors*/

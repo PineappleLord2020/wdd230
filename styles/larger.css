@@ -1,0 +1,12 @@
+@media screen and (min-width: 32em) {
+    
+    ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div{
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+    }
+}
