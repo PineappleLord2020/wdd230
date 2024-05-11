@@ -1,12 +1,32 @@
 @media screen and (min-width: 32em) {
     
-    ul{
-        flex-direction: row;
-        justify-content: space-around;
+    main{
+        /* grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto; */
     }
 
-    div{
+    h1{
+        grid-row: 1;
+    }
+
+    li{
+        width: 100%;
+    }
+    
+    nav{
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul{
+        flex-direction: row;
+        align-items: center;
+        width: 100%
+    }
+
+    .multicard{
         grid-template-columns: 1fr 1fr;
-        justify-content: space-around;
+        margin: 20px;
     }
 }

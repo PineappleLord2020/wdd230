@@ -9,6 +9,11 @@ article{
     background-color: aquamarine;
 }
 
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
 div{
     flex-direction: column;
     margin: 1em;
@@ -19,15 +24,22 @@ header{
     color: white;
     text-align: center;
     font-size: 50px;
+    padding-top: 10px;
 }
 
 h1{
     color: blue;
     text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
 }
 
 h2{
     background-color: #56E39F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0px;
 }
 
 li {
@@ -35,6 +47,8 @@ li {
     display: inline;
     padding: 30px 60px;
     font-size: 20px;
+    text-align: center;
+    /*width: 100%;*/
 }
 
 main{
@@ -45,6 +59,15 @@ main{
 
 nav{
     background-color: #59C9A5;
+    display: flex;
+    flex-direction: column;
+    /*height: 100%;
+    align-items: center;
+    width: 100%;*/
+}
+
+p{
+    padding-left: 10px;
 }
 
 section {
@@ -54,7 +77,8 @@ section {
 ul{
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -62,9 +86,8 @@ ul{
 /* class */
 
 .card{
-    grid-template-columns: 1fr;
     background-color: #5B6C5D;
-    z-index: -1;
+    grid-column: 1;
 }
 
 .home{
@@ -77,6 +100,20 @@ ul{
     color: white;
 }
 
+.multicard{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.assignmentLinks {
+    list-style-type: none;
+    display:list-item;
+}
 
 
 /* id */
+
+#card1, #card2 {
+    margin: 5px;
+    background-color: antiquewhite;
+}
