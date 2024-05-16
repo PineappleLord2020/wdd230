@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*Elements*/
+
+a:hover{
+    text-decoration: None;
+    font-weight: bold;
+    background-color:#47ba82;
+}
+
+a:link {
+    font-family: Reditt_Sans, sans-serif;
+    text-decoration: none;
+    color: White;
+}
+
+
+
+a:visited {
+    font-family: Reditt_Sans, sans-serif;
+    text-decoration: none;
+    color: #09351F;
+}
+
+.active{
+    background-color:#67b2e4;
+}
+
+body{
+    margin: 0px;
+}
+
+footer{
+    background-color:#5B6C5D;
+    padding: 15px;
+    color: white;
+    font-size: small;
+}
+
+h1, h2 {
+    font-family: Courgette, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p {
+    font-family: Reddit_Sans, sans-serif;
+    text-align: center;
+}
+
+/*Classes*/
+
+.active::before {
+	background-color: #465775;
+}
+
+.callToAction{
+    display: flex;
+    border-radius: 30px;
+    border: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 50px;
+    width: 90px;
+    background-color: #56E39F;
+    text-align: center;
+}
+
+.cards{
+    display:flex;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.events{
+    margin: 25px;
+    padding: 15px;
+    width: 75%;
+    background-color:#5B6C5D;
+    color: white;
+}
+
+.heroDescription{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.heroImage{
+    background-image: linear-gradient(rgba(69, 121, 142, 0.5), rgba(69, 121, 142, 0.5)), url(https://studyabroad.olemiss.edu/_customtags/ct_Image.cfm?Image_ID=49933);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.heroTitle{
+    margin: 15px;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.open a {
+	display: block;
+}
+.spotlights{
+    margin: 25px;
+    padding: 15px;
+    width: 75%;
+    background-color:#5B6C5D;
+    color: white;
+}
+
+.weather{
+    margin: 25px;
+    padding: 15px;
+    width: 75%;
+    background-color:#5B6C5D;
+    color: white;
+}
+
+/*id*/
+
+#menu{
+position: fixed;
+	top: 5px;
+	right: 5px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}

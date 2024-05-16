@@ -1,0 +1,24 @@
+@media screen and (min-width: 32em) {
+    .cards{
+        flex-direction: row;  
+    }
+
+    .class{
+        
+    }
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    /*id*/
+
+    #menu {
+		display: none;
+	}
+}
