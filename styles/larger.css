@@ -1,5 +1,8 @@
 @media screen and (min-width: 32em) {
     
+    .cards{
+        flex-direction: row;  
+    }
 
     h1{
         grid-row: 1;
@@ -9,11 +12,6 @@
         width: 100%;
     }
     
-    nav{
-        flex-direction: row;
-        margin: 0px;
-        padding: 0px;
-    }
 
     ul{
         flex-direction: row;
@@ -25,4 +23,21 @@
         grid-template-columns: 1fr 1fr;
         margin: 20px;
     }
+
+    .navigation {
+		flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    /*ID's*/
+
+    #menu {
+		display: none;
+	}
 }

@@ -16,16 +16,18 @@
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
+    <button id="mode"></button>
     <header>
         <img src="images/Andrew.jpg" alt="An Illistrated Photo of Andrew Mulert wearing a Spider-Man Hoodie" width="75" height="100">
         <span>Andrew Mulert</span>
     </header>
-    <nav>
+    <button id="menu"></button>
+    <nav class="navigation">
         <ul>
-            <li class="home"><a href="index.html">Home</a></li>
-            <li class="homeLinks"><a href="chamber/index.html" target="blank">Chamber</a></li>
-            <li class="homeLinks"><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li class="homeLinks"><b>Form</b></li>
+            <a href="index.html" class="home" title="Home">Home</a>
+            <a href="chamber/index.html" target="blank" class="homeLinks" title="Chamber">Chamber</a>
+            <a href="week01/chamber-site-plan.html" target="blank" class="homeLinks" title="Site Plan">Site Plan</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank" class="homeLinks" title="Form">Form</a>
         </ul>
     </nav>
     <main>
@@ -52,6 +54,6 @@
         <p>&copy <span id="year"></span> Andrew Mulert, USA</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

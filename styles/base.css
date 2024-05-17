@@ -4,6 +4,8 @@ a{
     grid-template-columns: 1fr ;
     text-decoration: none;
     color: black;
+    padding: 10px;
+    border: 5px;
 }
 
 a:hover and .homeLinks{
@@ -65,12 +67,7 @@ h2{
 }
 
 li {
-    list-style-type: none;
-    display: inline;
-    padding: 30px 60px;
-    font-size: 20px;
-    text-align: center;
-    color: black;
+
     /*width: 100%;*/
 }
 
@@ -108,6 +105,11 @@ ul{
 
 /* class */
 
+.assignmentLinks {
+    list-style-type: none;
+    display:list-item;
+}
+
 .card{
     background-color: #5B6C5D;
     grid-column: 1;
@@ -116,11 +118,22 @@ ul{
 .home{
     background-color: #EF6F6C;
     color: white;
+    list-style-type: none;
+    display: inline;
+    padding: 30px 60px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
 }
 
 .homeLinks{
     background-color: #EB4A47;
     color: black;
+    list-style-type: none;
+    display: inline;
+    padding: 30px 60px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .multicard{
@@ -128,9 +141,21 @@ ul{
     grid-template-columns: 1fr;
 }
 
-.assignmentLinks {
-    list-style-type: none;
-    display:list-item;
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+.open a {
+	display: block;
 }
 
 
@@ -139,4 +164,32 @@ ul{
 #card1, #card2 {
     margin: 5px;
     background-color: antiquewhite;
+}
+
+#menu{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+    
+#menu::before {
+    content: "☰";
+}
+    
+#menu.open::before {
+    content: "X";
+}
+
+#mode {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+    content: "🕶️";
+    border-top: 25px;
+    border-left: 25px;
+    border-radius: 25%;
+    background-color: #151b25;
 }
