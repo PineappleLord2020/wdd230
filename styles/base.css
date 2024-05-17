@@ -5,6 +5,27 @@ a{
     text-decoration: none;
 }
 
+a:hover and .homeLinks{
+    text-decoration: None;
+    color: white;
+    background-color: #c03d3b;
+}
+
+a:link {
+    font-family: Reditt_Sans, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+a:visited {
+    font-family: Reditt_Sans, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
 article{
     background-color: aquamarine;
 }
