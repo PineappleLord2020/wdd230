@@ -3,6 +3,7 @@
 a{
     grid-template-columns: 1fr ;
     text-decoration: none;
+    color: black;
 }
 
 a:hover and .homeLinks{
