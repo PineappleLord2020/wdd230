@@ -66,11 +66,6 @@ h2{
     margin: 0px;
 }
 
-li {
-
-    /*width: 100%;*/
-}
-
 main{
     display: grid;
     grid-template-columns: 1fr;
