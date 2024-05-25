@@ -1,5 +1,10 @@
 @media screen and (min-width: 32em) {
     
+    .assignmentLinks{
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .cards{
         flex-direction: row;  
     }
@@ -14,7 +19,6 @@
     
 
     ul{
-        flex-direction: row;
         align-items: center;
         width: 100%
     }
@@ -40,4 +44,5 @@
     #menu {
 		display: none;
 	}
+
 }
