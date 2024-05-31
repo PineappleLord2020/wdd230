@@ -7,7 +7,7 @@ a:hover{
     text-decoration: None;
     font-weight: bold;
     font-style: italic;
-    background-color:#5B6C5D;
+    background-color:#34793c;
 }
 
 a:link {
@@ -151,6 +151,7 @@ p {
     padding: 50px;
     border: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     background-color: #5B6C5D;
