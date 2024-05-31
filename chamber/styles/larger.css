@@ -1,13 +1,42 @@
 @media screen and (min-width: 32em) {
-    .cards{
+    
+
+	
+	/*classes*/
+	
+	.cards{
         flex-direction: row;  
     }
+
+	
+
+	.container:hover .feedImage {
+		opacity: 0.3;
+		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    	filter: grayscale(100%); 
+	}
+
+	.container:hover .middle{
+		opacity: 1;
+	}
 
 	.discover{
 		display: grid;
     	grid-template-columns: 1fr 1fr;
 		margin-left: auto;
     	margin-right: auto;
+	}
+
+	.feedImage {
+		opacity: 1;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+
+	.middle {
+		transition: .5s ease;
+		opacity: 0;
+		transform: translate(0%, -400%);
 	}
 
 	.navigation {
@@ -31,6 +60,10 @@
 
     #menu {
 		display: none;
+	}
+
+	#rearrange{
+		transform: translate(0%, -25%);
 	}
 
 	#sidebar{
