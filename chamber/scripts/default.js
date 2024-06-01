@@ -10,20 +10,30 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-/*function getMessage() {
+function getMessage() {
 	let currentDate = new Date();
+	let storedDate;
+	let message;
+
 	let date = localStorage.getItem('date');
 
 	if (date) {
-		storeDate = new Date(storeDate);
+		storedDate = new Date(parseInt(date));
 	}
 
 	if (date) {
-		let difference = currentDate.getMilliseconds - storeDate.getMilliseconds;
+		let differenceInTime = currentDate.getTime() - storedDate.getTime();
 		
-	} else{
+		if (differenceInTime < 86400000) {
+			message = "Back so soon! Awesome!";
+		} else {
+			let differenceInDays = Math.round(differenceInTime / (1000 * 3600 *24));
+			message = `You last visited ${differenceInDays} days ago.`;
+		}
+	} else {
 		message = "Welcome! Let us know if you have any questions."
 	}
+	
 
 	localStorage.setItem('date', currentDate.getTime());
 
@@ -31,4 +41,4 @@ hamButton.addEventListener('click', () => {
 }
 
 let displayMessage = getMessage();
-document.querySelector('#message').textContent = displayMessage;*/
+document.querySelector('#message').textContent = displayMessage;
