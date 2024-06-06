@@ -1,0 +1,39 @@
+caption {
+    caption-side: bottom;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: bisque;
+}
+
+td, th {
+    padding: .5em;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.bg-gray {
+    background-color: gray;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-border {
+    border: none;
+}

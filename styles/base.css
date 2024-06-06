@@ -18,7 +18,6 @@ a:link {
     font-family: Reditt_Sans, sans-serif;
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 
 
@@ -105,7 +104,8 @@ ul{
 .assignmentLinks {
     list-style-type: none;
     display:list-item;
-    padding: 15px;
+    font-weight: normal;
+    border: 5px;
 }
 
 .card{
@@ -143,6 +143,7 @@ ul{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
+    font-weight: bold;
 }
 
 .navigation a {
