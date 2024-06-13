@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="WDD 230 - Web Frontend Development | Andrew Mulert | course assignment portal"
+        />
+        <meta name="author" content="Andrew Mulert" />
+        <meta property="og:title" content="WDD 230 Assignment Page" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://preview.redd.it/9f4d4mnxbwo91.jpg?width=1080&crop=smart&auto=webp&s=4f7c9dfb1cb4f94a8318b269a5b9d474006f053d"
+        />
+        <!--href="https://preview.redd.it/9f4d4mnxbwo91.jpg?width=1080&crop=smart&auto=webp&s=4f7c9dfb1cb4f94a8318b269a5b9d474006f053d" was placed in the above meta property and was flagged by the HTML validator-->
+        <meta
+          property="og:url"
+          content="https://pineapplelord2020.github.io/wdd230/"
+        />
+        <title>Andrew Mulert - WDD 230 - Web Frontend Development</title>
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/larger.css" />
+        <link rel="stylesheet" href="styles/form.css" />
+        <link rel="icon" href="images/favicon.ico" />
+      </head>
+      <body>
+        <header>
+          <button id="mode"></button>
+          <picture>
+            <source srcset="images/andrew-small.webp" media="(max-width: 25px)" />
+            <source srcset="images/andrew-medium.webp" media="(max-width: 50px)" />
+            <img
+              src="images/andrew-large.webp"
+              alt="An Illistrated Photo of Andrew Mulert wearing a Spider-Man Hoodie"
+              width="75"
+              height="100"
+              loading="lazy"
+            />
+          </picture>
+          <span>Andrew Mulert</span>
+          <button id="menu"></button>
+          <nav class="navigation">
+            <a href="index.html" class="home" title="Home">Home</a>
+            <a
+              href="chamber/index.html"
+              target="blank"
+              class="homeLinks"
+              title="Chamber"
+              >Chamber</a
+            >
+            <a
+              href="week01/chamber-site-plan.html"
+              target="blank"
+              class="homeLinks"
+              title="Site Plan"
+              >Site Plan</a
+            >
+            <a
+              href="form.html"
+              class="homeLinks"
+              title="Form"
+              >Form</a
+            >
+          </nav>
+        </header>
+    <div id="formmessage"></div>
+    <form method="get" action="record.html" class="accountCreation">
+        <div>
+            <label for="username"><p>Username: <span>*</span></p>
+                <input type="text" id="username" name="username" required>
+            </label>
+            <label for="password"><p>Password: <span>*</span></p>
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8}" required>
+            </label>
+            <label for="confirmPassword"><p>Confirm Password: <span>*</span></p>
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="[A-Za-z]{8}" required>
+            </label>
+            <label for="email"><p>Email:</p>
+                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+            </label>
+            <label for="r"><p>Page Rating:</p>
+                <div id="rangevalue">1</div>
+                <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <input type="submit" value="Create Account">
+        </div>
+    </form>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

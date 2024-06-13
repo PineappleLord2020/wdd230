@@ -1,0 +1,63 @@
+:root{
+	--bord: 3px solid gray;
+	--rad: 40px;
+	--marg: 20px;
+	--pad: 10px;
+}
+
+div{
+    padding: 20px;
+}
+
+input, label {
+    display: block;
+    padding-bottom: 5px;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+p{
+	padding: 2px;
+	font-weight: bolder;
+}
+
+span{
+	color: red;
+}
+
+.accountCreation{
+	margin: 20px;
+	background-color: antiquewhite;
+	width: 35%;
+	align-items: center;
+	border-radius: 30px;
+}
+
+.accountCreation input[type="text"],
+.accountCreation input[type="password"],
+.accountCreation input[type="email"],
+.accountCreation input[type="range"]
+{
+	border-width: var(--bord);
+	border-radius: var(--rad);
+	margin-bottom: var(--marg);
+	padding-top: var(--pad);
+	padding: 10px;
+	font-family: Reditt_Sans, sans-serif;
+	
+}
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0px;
+	width: 185px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
