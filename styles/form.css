@@ -21,14 +21,11 @@ p{
 	font-weight: bolder;
 }
 
-span{
-	color: red;
-}
-
 .accountCreation{
 	margin: 20px;
 	background-color: antiquewhite;
 	width: 35%;
+	min-width: 300px;
 	align-items: center;
 	border-radius: 30px;
 }
@@ -45,6 +42,10 @@ span{
 	padding: 10px;
 	font-family: Reditt_Sans, sans-serif;
 	
+}
+
+.required{
+	color: red;
 }
 
 #r {
