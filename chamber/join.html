@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      property="og:title"
+      content="Oxford Mississippi Chamber of Congress"
+    />
+    <meta property="og:type" content="Website">
+    <meta
+      property="og:image"
+      content="image"
+      href="https://livability.com/wp-content/uploads/2020/04/OxfordMSHeader1_0.jpg"
+    >
+    <title>Oxford Mississippi Chamber of Congress</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <button id="menu"></button>
+      <nav class="navigation">
+        <a href="index.html" class="active" title="Home">Home</a>
+        <a href="discover.html" title="Discover">Discover</a>
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          target="blank"
+          title="Directory"
+          >Directory</a
+        >
+        <a href="join.html" target="blank" title="Join">Join</a>
+      </nav>
+      <div class="heroImage">
+        <div class="heroText">
+          <h1 class="heroTitle">
+            Welcome to the Oxford Mississippi Chamber of Congress
+          </h1>
+          <p class="heroDescription">
+            Where we hope to build a better community through hospitality
+          </p>
+          <a
+            class="callToAction"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="blank"
+            ><b>Learn More</b></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="cards">
+        <div class="form">
+          <form method="get" action="thankyou.html" title="Join">
+            Join our Community
+            <label
+              ><p class="inputTitle">First Name*</p>
+              <input type="text" name="fname" id="fname" required
+            /></label>
+            <label
+              ><p class="inputTitle">Last Name*</p>
+              <input type="text" name="lname" id="lname" required
+            /></label>
+            <label
+              ><p class="inputTitle">Title or Position</p>
+              <input
+                type="text"
+                name="postition"
+                id="postition"
+                postition="[A-Za-z -]{7,}"
+            /></label>
+            <label
+              ><p class="inputTitle">Email*</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                required
+            /></label>
+            <label
+              ><p class="inputTitle">Mobile Phone Number*</p>
+              <input type="tel" name="tel" id="tel" required
+            /></label>
+            <label
+              ><p class="inputTitle">Business/Organization's Name*</p>
+              <input type="text" name="org" id="org" required
+            /></label>
+            <div><h2 class="inputTitle">Membership Level</h2></div>
+            <label class="dial"
+              ><input type="radio" name="membership" value="np" />
+              <p>NP</p></label
+            >
+            <label class="dial"
+              ><input type="radio" name="membership" value="bronze" />
+              <p>Bronze</p></label
+            >
+            <label class="dial"
+              ><input type="radio" name="membership" value="silver" />
+              <p>Silver</p></label
+            >
+            <label class="dial"
+              ><input type="radio" name="membership" value="Gold" />
+              <p>Gold</p></label
+            >
+            <label
+              ><p class="inputTitle">Business/Organization's Description</p>
+              <textarea name="description" id="description"></textarea>
+            </label>
+            <label>
+              <input
+                type="hidden"
+                type="datetime"
+                name="timestamp"
+                id="timestamp"
+              />
+            </label>
+            <input type="submit" value="Create Account" />
+          </form>
+        </div>
+
+        <div class="table">
+          <table>
+            <caption>
+              Table 1: Account Feature Comparison
+            </caption>
+            <thead>
+              <tr>
+                <th colspan="5" scope="colgroup" class="no-border bg-black">
+                  Membership Benefits
+                </th>
+              </tr>
+              <tr>
+                <td scope="col" class="no-border bg-black"></td>
+                <td scope="col" class="no-border basic">
+                  Non-Profit
+                  <p>$1/month</p>
+                </td>
+                <td scope="col" class="no-border bronze">
+                  Bronze
+                  <p>$5/month</p>
+                </td>
+                <td scope="col" class="no-border silver">
+                  Silver
+                  <p>$10/month</p>
+                </td>
+                <td scope="col" class="no-border gold">
+                  Gold
+                  <p>$15/month</p>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="bold">Special Events</td>
+                <td class="no-border basic-dark">✔️</td>
+                <td class="no-border bronze-dark">✔️</td>
+                <td class="no-border silver-dark">✔️</td>
+                <td class="no-border gold-dark">✔️</td>
+              </tr>
+              <tr>
+                <td class="bold">Training</td>
+                <td class="no-border basic">❌</td>
+                <td class="no-border bronze">✔️</td>
+                <td class="no-border silver">✔️</td>
+                <td class="no-border gold">✔️</td>
+              </tr>
+              <tr>
+                <td class="bold">Advertising</td>
+                <td class="no-border basic-dark">❌</td>
+                <td class="no-border bronze-dark">❌</td>
+                <td class="no-border silver-dark">✔️</td>
+                <td class="no-border gold-dark">✔️</td>
+              </tr>
+              <tr>
+                <td class="bold">Event Discounts</td>
+                <td class="no-border basic">❌</td>
+                <td class="no-border bronze">❌</td>
+                <td class="no-border silver">❌</td>
+                <td class="no-border gold">✔️</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy <span id="year"></span> Andrew Mulert, USA</p>
+      <p>Contact Info: andrewmulert@gmail.com (208)-760-5495</p>
+      <p>
+        This site is built as a WDD 230 Project and is not the official site of
+        the Oxford Mississippi Chamber of Commerce
+      </p>
+      <p id="lastModified">Last Modified:</p>
+      <script src="scripts/default.js"></script>
+    </footer>
+  </body>
+</html>

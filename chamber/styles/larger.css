@@ -48,6 +48,11 @@
 		flex: 1 1 100%;
 	}
 
+	.table{
+		max-height: 350px;
+		max-width: 500px;
+	}
+
     /*id*/
 
 	#feed{

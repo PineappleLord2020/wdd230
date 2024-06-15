@@ -27,13 +27,13 @@ a:visited {
     color: white;
 }
 
-.active{
-    background-color:#308abe;
-    color:black;
-}
-
 body{
     margin: 0px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 15px;
 }
 
 footer{
@@ -48,6 +48,13 @@ h1, h2 {
     text-align: center;
 }
 
+input, label {
+    display: block;
+    padding-bottom: 5px;
+	border-radius: 30px;
+	padding: 10px;
+}
+
 li {
     font-family: Reditt_Sans, sans-serif;
 }
@@ -57,10 +64,70 @@ p {
     text-align: center;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+table{
+    margin: 25px;
+    padding: 15px;
+    max-height: 40%;
+	max-width: 50%;
+    background-color:#5B6C5D;
+    color: white;
+}
+
+td, th {
+    padding: .5em;
+}
+
+tr:nth-child(even) {
+    background-color: #56E39F;
+    color: black
+}
+
+tr:nth-child(odd) {
+    background-color: #19391c;
+    color: white;
+}
+
 /*Classes*/
+
+.active{
+    background-color:#308abe;
+    color:black;
+}
 
 .active::before {
 	background-color: #465775;
+}
+
+.basic{
+    background-color: antiquewhite;
+    color:black;
+}
+
+.basic-dark{
+    background-color: rgb(180, 169, 154);
+    color:black;
+}
+
+.bg-black {
+    background-color:#5B6C5D;
+    color: white;
+}
+
+.bronze{
+    background-color: rgb(232, 141, 76);
+    color: black;
+}
+
+.bronze-dark{
+    background-color: rgb(210, 128, 68);
+    color: black;
 }
 
 .callToAction{
@@ -83,9 +150,13 @@ p {
     display:flex;
     margin: 25px;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     text-align: center;
     padding: 15px;
+}
+
+.dial{
+    padding-top: 15px;
 }
 
 .discover{
@@ -101,6 +172,26 @@ p {
     width: 75%;
     background-color:#5B6C5D;
     color: white;
+}
+
+.form{
+    margin: 25px;
+    padding: 15px;
+    width: 75%;
+    max-width: 500px;
+    background-color:#5B6C5D;
+    color: white;
+    border-radius: 20px;
+}
+
+.gold{
+    background-color: rgb(252, 215, 83);
+    color: black;
+}
+
+.gold-dark{
+    background-color: rgb(216, 185, 71);
+    color: black;
 }
 
 .heroDescription{
@@ -127,6 +218,12 @@ p {
     margin: 15px;
 }
 
+.inputTitle{
+    padding: 2px;
+	font-weight: bolder;
+    text-align: left;
+}
+
 .navigation {
 	display: flex;
 	flex-direction: column;
@@ -138,6 +235,10 @@ p {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
+}
+
+.no-border{
+    border: none;
 }
 
 .open a {
@@ -158,6 +259,16 @@ p {
     color: white;
 }
 
+.silver{
+    background-color: rgb(221, 204, 192);
+    color: black;
+}
+
+.silver-dark{
+    background-color: rgb(166, 152, 142);
+    color: black;
+}
+
 .spotlights{
     margin: 25px;
     padding: 15px;
@@ -175,6 +286,12 @@ p {
 }
 
 /*id*/
+
+#description{
+    margin: left;
+    width: 50%;
+    height: 30%;
+}
 
 #events{
     list-style-type: none;
