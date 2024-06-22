@@ -1,0 +1,34 @@
+h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 15px;
+}
+
+h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: navy;
+}
+
+img{
+    border-radius: 15px;
+}
+
+main{
+    display: grid;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    background-color: rgb(137, 180, 166);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 350px;
+}
+
+#cards{
+    grid-template-columns: 1fr;
+}
