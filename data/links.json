@@ -1,0 +1,59 @@
+[
+    {
+        "week": "Week 1",
+        "links": [
+            {"title": "Design",
+            "url": "week01/holygrail.html"}
+        ]
+    },
+    {
+        "week": "Week 2",
+        "links": [
+            {"title": "Book of Mormon Top 10",
+            "url": "week02/bom.html"},
+            {"title": "Design",
+            "url": "week02/design.html"},
+            {"title": "Codepen",
+            "url": "https://codepen.io/PineappleLord2020/pen/xxNbRoj"}
+        ]
+    },
+    {
+        "week": "Week 3",
+        "links": [
+            {"title": "WebP",
+            "url": "week03/images/landscape.webp"},
+            {"title": "Lazy Loading",
+            "url": "week03/lazyloading/lazyloading.html"},
+            {"title": "Responsive Images",
+            "url": "week03/responsive-images/responsive-images.html"},
+            {"title": "Book of Mormon List",
+            "url": "week03/bom/bom.html"}
+        ]
+    },
+    {
+        "week": "Week 4",
+        "links": [
+            {"title": "CSS Pseudo-classes List",
+            "url": "https://codepen.io/PineappleLord2020/pen/zYQwLQJ"},
+            {"title": "CSS Combinators",
+            "url": "week04/images/combinators.png"},
+            {"title": "HTML Tables for Data Presentation",
+            "url": "week04/tablebuild.html"},
+            {"title": "HTML Forms",
+            "url": "week04/Form-start/index.html"}
+        ]
+    },
+    {
+        "week": "Week 5",
+        "links": [
+            {"title": "Pseudo-classes",
+            "url": "https://codepen.io/PineappleLord2020/pen/YzbLzGm"},
+            {"title": "Working with JSON Data",
+            "url": "week05/new-ward-members.json"},
+            {"title": "The Fetch API",
+            "url": "week05/prophets.html"},
+            {"title": "Consuming a Third-Party Weather API",
+            "url": "week05/weather.html"}
+        ]
+    }
+]

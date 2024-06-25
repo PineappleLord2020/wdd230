@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -57,12 +57,7 @@
           title="Site Plan"
           >Site Plan</a
         >
-        <a
-          href="form.html"
-          class="homeLinks"
-          title="Form"
-          >Form</a
-        >
+        <a href="form.html" class="homeLinks" title="Form">Form</a>
       </nav>
     </header>
 
@@ -92,87 +87,92 @@
       <div class="multicard">
         <section id="card1">
           <h2>Learning Activities</h2>
-          <ul>
+          <div id="assignmentLinks"></div>
+          <!--<ul>
             <li class="assignmentLinks">
-              <p><b>Week 01:</b>
+              <p>
+                <b>Week 01:</b>
                 <a href="week01/holygrail.html" target="blank">Design</a>
               </p>
             </li>
             <li class="assignmentLinks">
-              <p><b>Week 02:</b>
-                <a href="week02/bom.html" target="blank">Book of Mormon Top 10</a
-                >|
-                <a href="week02/design.html" target="blank">Design</a
-                >|
+              <p>
+                <b>Week 02:</b>
+                <a href="week02/bom.html" target="blank"
+                  >Book of Mormon Top 10</a
+                >| <a href="week02/design.html" target="blank">Design</a>|
                 <a
-                href="https://codepen.io/PineappleLord2020/pen/xxNbRoj"
-                target="blank"
-                >Codepen</a
+                  href="https://codepen.io/PineappleLord2020/pen/xxNbRoj"
+                  target="blank"
+                  >Codepen</a
                 >
               </p>
             </li>
             <li class="assignmentLinks">
-              <p><b>Week 03:</b>
-                <a href="week03/images/landscape.webp" target="blank"
-                >WebP</a
-                >|
+              <p>
+                <b>Week 03:</b>
+                <a href="week03/images/landscape.webp" target="blank">WebP</a>|
                 <a href="week03/lazyloading/lazyloading.html" target="blank"
-                >Lazy Loading</a
+                  >Lazy Loading</a
                 >|
                 <a
-                href="week03/responsive-images/responsive-images.html"
-                target="blank"
-                >Responsive Images</a
+                  href="week03/responsive-images/responsive-images.html"
+                  target="blank"
+                  >Responsive Images</a
                 >|
                 <a href="week03/bom/bom.html" target="blank"
-                >Book of Mormon List</a
+                  >Book of Mormon List</a
                 >
               </p>
             </li>
             <li class="assignmentLinks">
-              <p><b>Week 04:</b>
+              <p>
+                <b>Week 04:</b>
                 <a
-                href="https://codepen.io/PineappleLord2020/pen/zYQwLQJ"
-                target="blank"
-                >CSS Pseudo-classes List</a
+                  href="https://codepen.io/PineappleLord2020/pen/zYQwLQJ"
+                  target="blank"
+                  >CSS Pseudo-classes List</a
                 >|
                 <a href="week04/images/combinators.png" target="blank"
-                >CSS Combinators</a
+                  >CSS Combinators</a
                 >|
                 <a href="week04/tablebuild.html" target="blank"
-                >HTML Tables for Data Presentation</a
+                  >HTML Tables for Data Presentation</a
                 >|
                 <a href="week04/Form-start/index.html" target="blank"
-                >HTML Forms</a
+                  >HTML Forms</a
                 >
               </p>
             </li>
             <li class="assignmentLinks">
-              <p><b>Week 05:</b>
+              <p>
+                <b>Week 05:</b>
                 <a
-                href="https://codepen.io/PineappleLord2020/pen/YzbLzGm"
-                target="blank"
-                >Pseudo-classes</a
+                  href="https://codepen.io/PineappleLord2020/pen/YzbLzGm"
+                  target="blank"
+                  >Pseudo-classes</a
                 >|
-                <a
-                href="week05/new-ward-members.json"
-                target="blank"
-                >Working with JSON Data</a
+                <a href="week05/new-ward-members.json" target="blank"
+                  >Working with JSON Data</a
                 >|
-                <a href="week05/prophets.html" target="blank"
-                >The Fetch API</a>|
-                <a
-                href="week05/weather.html"
-                target="blank"
-                >Consuming a Third-Party Weather API</a
+                <a href="week05/prophets.html" target="blank">The Fetch API</a>|
+                <a href="week05/weather.html" target="blank"
+                  >Consuming a Third-Party Weather API</a
                 >
               </p>
             </li>
-          </ul>
+          </ul>-->
         </section>
         <section id="card2">
           <h2>Information</h2>
-          <p>Weather</p>
+          <p>
+            <span id="current-temp">
+            <figure>
+              <img id="weather-icon" src="" alt="" />
+              <figcaption></figcaption>
+            </figure>
+            </span>
+          </p>
           <p>Number of Pages: 17</p>
           <p>Visit Count: <span id="count">0</span></p>
         </section>
@@ -194,5 +194,6 @@
       <p id="lastModified"></p>
     </footer>
     <script src="scripts/main.js"></script>
+    <script src="scripts/links.js"></script>
   </body>
 </html>
