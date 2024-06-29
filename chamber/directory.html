@@ -28,11 +28,7 @@
           title="Directory"
           >Directory</a
         >
-        <a
-          href="join.html"
-          title="Join"
-          >Join</a
-        >
+        <a href="join.html" title="Join">Join</a>
       </nav>
       <div class="heroImage">
         <div class="heroText">
@@ -52,7 +48,13 @@
       </div>
     </header>
     <main>
-        <h1>Thank You for Joining Us!</h1>
+      <div class="menu">
+        <button id="grid">⏹️Grid</button>
+        <button id="list">📄List</button>
+      </div>
+      <hr>
+      <article class="grid" id="members">
+      </article>
     </main>
     <footer>
       <p>&copy <span id="year"></span> Andrew Mulert, USA</p>
@@ -63,6 +65,7 @@
       </p>
       <p id="lastModified">Last Modified:</p>
       <script src="scripts/default.js"></script>
+      <script src="scripts/members.js"></script>
     </footer>
   </body>
 </html>

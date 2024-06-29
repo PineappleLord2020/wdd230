@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Google",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "phoneNumber": "(650) 253-0000",
+        "website": [
+            {"url": "https://visit.withgoogle.com/",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://hackaday.com/wp-content/uploads/2016/08/google-g-logo.png",
+            "alt": "Google 'G' Logo"}
+        ],
+        "membershipLevel": "Gold",
+        "leader": "Sundar Pichai"
+    },
+    {
+        "name": "Stark Industries",
+        "address": "100 Innovation Way, Los Angeles, CA 90001",
+        "phoneNumber": "(213) 870-0000",
+        "website": [
+            {"url": "https://www.marvel.com/characters/iron-man-tony-stark",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://external-preview.redd.it/NVfLdNBwwTkQECrutIDJpLvYTz4YJ_AqJ0kdGle8k_4.jpg?auto=webp&s=521b7c2541b49650404c831cfef15a29da206bfd",
+            "alt": "Stark Industries Logo"}
+        ],
+        "membershipLevel": "Gold",
+        "leader": "Tony Stark"
+    },
+    {
+        "name": "Apple",
+        "address": "One Apple Park Way, Cupertino, CA 95014",
+        "phoneNumber": "(408) 996-1010",
+        "website": [
+            {"url": "https://www.apple.com/retail/appleparkvisitorcenter/",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/625px-Apple_logo_black.svg.png",
+            "alt": "Apple Logo"}
+        ],
+        "membershipLevel": "Silver",
+        "leader": "Tim Cook"
+    },
+    {
+        "name": "Space X",
+        "address": "1 Rocket Rd, Hawthorne, CA 90250",
+        "phoneNumber": "(310) 363-6000",
+        "website": [
+            {"url": "https://www.spacex.com/",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/SpaceX_logo_black.svg/1280px-SpaceX_logo_black.svg.png",
+            "alt": "Space X Logo"}
+        ],
+        "membershipLevel": "Silver",
+        "leader": "Elon Musk"
+    },
+    {
+        "name": "S.T.A.R. Labs",
+        "address": "3700 Hidden Creek Road, Dripping Springs, TX 78620",
+        "phoneNumber": "(512) 888-7890",
+        "website": [
+            {"url": "https://dc.fandom.com/wiki/S.T.A.R._Labs",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/S.T.A.R._Labs_logo.svg/1200px-S.T.A.R._Labs_logo.svg.png",
+            "alt": "S.T.A.R. Labs Logo"}
+        ],
+        "membershipLevel": "Bronze",
+        "leader": "Silas Stone"
+    },
+    {
+        "name": "Aperture Science",
+        "address": "23 Aperture Way, Old Aperture Quarry, Cleveland, OH 44113",
+        "phoneNumber": "(513) 273-7724",
+        "website": [
+            {"url": "https://www.aperturescience.com/",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTskCqoOl49-1btcC4yZ_a78GiNw3gEGbTifg&s",
+            "alt": "Aperture Laboratories Logo"}
+        ],
+        "membershipLevel": "Silver",
+        "leader": "G.L.A.D.O.S."
+    },
+    {
+        "name": "Doofenshmirtz Evil Incorporated",
+        "address": "123 Evil Way, Danville, Tri-State Area, IL 00001",
+        "phoneNumber": "(555) EVIL-455",
+        "website": [
+            {"url": "https://phineasandferb.fandom.com/wiki/Doofenshmirtz_Evil_Incorporated",
+            "title": "Visit Us"}
+        ],
+        "image": [
+            {"url": "https://ih1.redbubble.net/image.2756091299.0299/flat,750x,075,f-pad,750x1000,f8f8f8.webp",
+            "alt": "Doofenshmirtz Evil Incorporated Logo"}
+        ],
+        "membershipLevel": "NP",
+        "leader": "Heinz Doofenshmirtz"
+    }
+]

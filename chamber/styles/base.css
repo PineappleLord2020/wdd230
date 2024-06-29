@@ -48,6 +48,11 @@ h1, h2 {
     text-align: center;
 }
 
+img{
+    max-width: 300px;
+    max-height: 200px;
+}
+
 input, label {
     display: block;
     padding-bottom: 5px;
@@ -62,6 +67,11 @@ li {
 p {
     font-family: Reddit_Sans, sans-serif;
     text-align: center;
+}
+
+section {
+    max-width: 500px;
+    max-height: 600px;
 }
 
 table, th, td {
@@ -184,6 +194,15 @@ tr:nth-child(odd) {
     border-radius: 20px;
 }
 
+.grid{
+    display: flex;
+    margin: 25px;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
 .gold{
     background-color: rgb(252, 215, 83);
     color: black;
@@ -223,6 +242,8 @@ tr:nth-child(odd) {
 	font-weight: bolder;
     text-align: left;
 }
+
+
 
 .navigation {
 	display: flex;
