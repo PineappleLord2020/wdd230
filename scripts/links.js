@@ -1,7 +1,7 @@
 //const baseURL = 'https://https://pineapplelord2020.github.io/wdd230/';
 //const linksURL= 'https://https://pineapplelord2020.github.io/wdd230/data/links.json';
 
-const linksURL = "../data/links.json";
+const linksURL = "../WDD230/data/links.json";
 
 const links = document.querySelector("#assignmentLinks");
 
