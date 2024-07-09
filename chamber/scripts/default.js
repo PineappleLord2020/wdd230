@@ -73,11 +73,7 @@ function displayResults(data) {
     captionDesc.textContent = `${desc}`;
 }
 
-/*const futureTemp = document.querySelector('#future-temp');
-const weatherWeekIcon = document.querySelector('#weather-week-icon');
-const captionForcastDesc = document.querySelector('#forcastDesc');
-
-const fiveDayURL = 'api.openweathermap.org/data/2.5/forecast?lat=34.36597806132115&lon=-89.51930703708217&appid=70acdbc7066a8c4ce4c025b90a2fa3b0&units=imperial'
+const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=34.36597806132115&lon=-89.51930703708217&appid=70acdbc7066a8c4ce4c025b90a2fa3b0&units=imperial&'
 const futureForcast = document.querySelector("#weatherForcast")
 
 async function FiveDayFetch() {
@@ -86,7 +82,7 @@ async function FiveDayFetch() {
         if (response.ok) {
             const dataWeek = await response.json();
             console.log(dataWeek);
-            displayResults(dataWeek);
+            displayWeekResults(dataWeek);
         } else {
         throw Error(await response.text());
     }
@@ -99,28 +95,30 @@ FiveDayFetch();
 
 
 
-function displayResults = (results) => {
-	results.forEach((result) => {
+function displayWeekResults (results){
+	for(let i = 0; i < results.list.length; i+= 14) {
 		const temperature = document.createElement("span");
+
 		futureForcast.appendChild(temperature);
 
-		results.list.forEach((listElement) => {
+			const weatherWeekIcon = document.createElement('img');
 			const weekTemp = document.createElement("p");
-			weekTemp.textContent = listElement.main.temp;
+			const captionForcastDesc = document.createElement('p');
+			weekTemp.textContent = results.list[i].main.temp;
 			const weekDescription = document.createElement("figcaption");
-			weekDescription = listElement.weather.main;
+			weekDescription.textContent = results.list[i].weather.main;
 			futureForcast.appendChild(weekTemp);
-		})
-	})
+			futureForcast.appendChild(weatherWeekIcon);
+			futureForcast.appendChild(weekDescription);
+
+			weekDescription.textContent = results.list[i].weather[0].description;
+    		const iconsrc = `https://openweathermap.org/img/w/${results.list[i].weather[0].icon}.png`;
+    		let desc = results.list[i].weather.description;
+    		weatherWeekIcon.setAttribute('src', iconsrc);
+    		weatherWeekIcon.setAttribute('alt', desc);
+    		captionForcastDesc.textContent = `${desc}`;
+	};
 }
-	
-    futureTemp.innerHTML = `${dataWeek.main.temp.toFixed(0)}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${dataWeek.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
-}*/
 
 
 let displayMessage = getMessage();
