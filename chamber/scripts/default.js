@@ -73,7 +73,7 @@ function displayResults(data) {
     captionDesc.textContent = `${desc}`;
 }
 
-const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=34.36597806132115&lon=-89.51930703708217&appid=70acdbc7066a8c4ce4c025b90a2fa3b0&units=imperial&'
+const fiveDayURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=34.36597806132115&lon=-89.51930703708217&appid=70acdbc7066a8c4ce4c025b90a2fa3b0&units=imperial'
 const futureForcast = document.querySelector("#weatherForcast")
 
 async function FiveDayFetch() {
@@ -119,6 +119,24 @@ function displayWeekResults (results){
     		captionForcastDesc.textContent = `${desc}`;
 	};
 }
+
+const banner = document.querySelector("#banner");
+
+function showBanner() {
+	const date = new Date()
+	const day = date.getDay();
+	const close = document.querySelector("#hide");
+	if (day === 1, day === 2, day === 3){
+		console.log(date);
+		banner.classList.toggle("show");
+	};
+	close.addEventListener("click", () => {
+		banner.classList.toggle("hidden");	
+	})
+};
+
+showBanner();
+
 
 
 let displayMessage = getMessage();

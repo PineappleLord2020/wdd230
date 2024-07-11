@@ -115,6 +115,8 @@ tr:nth-child(odd) {
 	background-color: #465775;
 }
 
+
+
 .basic{
     background-color: antiquewhite;
     color:black;
@@ -237,6 +239,10 @@ tr:nth-child(odd) {
     margin: 15px;
 }
 
+.hidden{
+    display: none;
+}
+
 .inputTitle{
     padding: 2px;
 	font-weight: bolder;
@@ -280,6 +286,10 @@ tr:nth-child(odd) {
     color: white;
 }
 
+.show{
+    display: block;
+}
+
 .silver{
     background-color: rgb(221, 204, 192);
     color: black;
@@ -307,6 +317,22 @@ tr:nth-child(odd) {
 }
 
 /*id*/
+
+#banner{
+    flex-direction: row;
+    align-self: center;
+}
+
+#banner p{
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+#banner button{
+    margin-top: 10px;
+    margin-right: auto;
+    height: 30px;
+}
 
 #description{
     margin: left;
