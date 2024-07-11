@@ -1,12 +1,14 @@
 const linksURL = "../chamber/data/members.json";
 
 const links = document.querySelector("#members");
+const adSpace = document.querySelector(".spotlight")
 
 async function getContacts() {
   const response = await fetch(linksURL);
   const data = await response.json();
 
   displayContacts(data);
+  displayAdvertiser(data);
 
 }
 
@@ -28,7 +30,7 @@ const displayContacts = (contacts) => {
     const membership = document.createElement("h4");
     membership.textContent = contact.membershipLevel;
     const ceo = document.createElement("h4");
-    ceo.textContent = `CEO: ${contact.leader}`
+    ceo.textContent = `CEO: ${contact.leader}`;
     
 
 
