@@ -15,6 +15,7 @@ async function getContacts() {
 const displayContacts = (contacts) => {
   contacts.forEach((contact) => {
       const portfolio = document.createElement("section");
+      portfolio.classList.add("companyPortfolio");
       links.appendChild(portfolio);
       const name = document.createElement("h3");
       name.textContent = contact.name;
@@ -56,6 +57,7 @@ const displayContacts = (contacts) => {
         const websiteElement = document.createElement("a");
         websiteElement.textContent = site.title;
         websiteElement.setAttribute("href", site.url);
+        websiteElement.classList.add("companySite");
         portfolio.appendChild(websiteElement);
       });
     });

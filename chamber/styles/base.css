@@ -170,6 +170,19 @@ tr:nth-child(odd) {
 .companyLogo {
     height: 75px;
 	max-width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.companyPortfolio {
+    padding: 15px;
+    margin: 25px;
+    background-color: #56E39F;
+}
+
+.companySite {
+    padding: 15px;
 }
 
 .dial{
