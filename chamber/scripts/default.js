@@ -123,11 +123,11 @@ function displayWeekResults (results){
 const banner = document.querySelector("#banner");
 
 function showBanner() {
-	const date = new Date()
+	const date = new Date();
 	const day = date.getDay();
 	const close = document.querySelector("#hide");
-	if (day === 1, day === 2, day === 3){
-		console.log(date);
+	if (day === 1 || day === 2 || day === 3){
+		console.log(day);
 		banner.classList.toggle("show");
 	};
 	close.addEventListener("click", () => {
